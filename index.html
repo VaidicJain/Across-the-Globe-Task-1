@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HobbyCue</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&family=Josefin+Sans:ital,wght@1,500&family=Lato&family=Lora:ital@1&family=Montserrat+Alternates:ital,wght@1,300;1,600&family=Nerko+One&family=Poppins:ital,wght@1,300&family=Prata&family=Sono:wght@500&display=swap"
+        rel="stylesheet">
+    <script src="./script.js" defer></script>
+    <script src="https://kit.fontawesome.com/b41349ccfe.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Code for the NAVBAR -->
+    <nav class="navbar">
+        <img class="logo" src="./Assets/HobbyCue Logo.png" alt="HobbyCue">
+        <ul class="navUl">
+            <li class="navLi">
+                <div class="searchBox">
+                    <input type="search" placeholder="Search Here">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                </div>
+            </li>
+            <div class="navBox">
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="dropdown()"> <i class="fa-solid fa-compass"
+                            style="color: #8064a2;"></i> Explore
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="#">People- Community</a>
+                        <a href="#">Places-Venues</a>
+                        <a href="#">Programs- Events</a>
+                        <a href="#">Products- Store</a>
+                        <a href="#">Blogs</a>
+                    </div>
+                </div>
+                <li class="navLi"><i class="fa-solid fa-heart" style="color: #8064a2; margin-right: 5px;"></i> <a
+                        href="">Hobbies <i class="fa-solid fa-chevron-down"></i></a>
+                </li>
+                <li class="navLi"><i class="fa-solid fa-bookmark" style="color: #8064a2;"></i></li>
+                <li class="navLi"><i class="fa-solid fa-bell" style="color: #8064a2;"></i></li>
+                <li class="navLi"><i class="fa-solid fa-cart-shopping" style="color: #8064a2;"></i></li>
+            </div>
+            <button class="signInBtn">Sign In</button>
+        </ul>
+    </nav>
+
+    <!-- Code for the Home Page -->
+    <div class="homeBox">
+        <div class="leftBox">
+            <div class="upperBox">
+                <h1 class="heading1">Explore your <span style="color: rgba(0, 150, 200, 1)">hobby</span> or
+                    <span style="color: rgba(128, 100, 162, 1);">passion</span>
+                </h1>
+                <p class="para">
+                    Sign-in to interact with a community of fellow hobbyists and an eco-system of experts, teachers,
+                    suppliers, classes, workshops, and places to practice, participate or perform. Your hobby may be
+                    about visual or performing arts, sports, games, gardening, model making, cooking, indoor or outdoor
+                    activities…
+                    <br>
+                    <br>
+                    If you are an expert or a seller, you can Add your Listing and promote yourself, your students,
+                    products, services or events. Hop on your hobbyhorse and enjoy the ride.
+                </p>
+            </div>
+            <div class="lowerBox">
+                <img class="peopleSVG" src="./Assets/people1.png" alt="People 1">
+                <img class="peopleSVG" src="./Assets/people2.png" alt="People 1">
+            </div>
+        </div>
+        <div class="rightBox">
+            <div class="formBox">
+                <div class="signInDiv">
+                    <h1 class="signIn">Sign In</h1>
+                    <h1 class="joinIn">Join In</h1>
+                </div>
+                <div class="signInForm">
+                    <button class="continueBtn"><img src="./Assets/google.png" alt="Google"> Continue With
+                        Google</button>
+                    <button class="continueBtn"><img src="./Assets/facebook.png" alt="FaceBook">Continue with
+                        FaceBook</button>
+                    <p class="spanPara"><span>Or connect with</span></p>
+                    <form class="form1" method="POST" action="#">
+                        <input id="email" type="email" name="email" title="email" placeholder="Email">
+                        <input id="password" type="password" name="password" title="password" placeholder="Password">
+                        <div class="bottomBox">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox" class="regular-checkbox">
+                                <label for="checkbox"></label>
+                                <span>Remember me</span>
+                            </div>
+                            <a class="forgotPass" href="#"><i class="fa-solid fa-lock" style="color: #757575;"></i>
+                                Forgot Password?</a>
+                        </div>
+                        <button type="submit" class="formBtn">Login</button>
+                    </form>
+                </div>
+                <div class="joinInForm">
+                    <button class="continueBtn2"><img src="./Assets/google.png" alt="Google"> Continue With
+                        Google</button>
+                    <button class="continueBtn2"><img src="./Assets/facebook.png" alt="FaceBook">Continue with
+                        FaceBook</button>
+                    <p class="spanPara2"><span>Or connect with</span></p>
+                    <form class="form" method="POST" action="#">
+                        <input id="email2" type="email" name="email" title="email" placeholder="Email">
+                        <input id="password2" type="password" name="password" title="password" placeholder="Password">
+                        <div class="bottomBox">
+                            <p>By continuing, you agree to our <strong>Terms of Service</strong> and <strong>Privacy
+                                    Policy</strong></p>
+                        </div>
+                        <button type="submit" class="formBtn2">Agree and Continue</button>
+                    </form>
+                </div>
+            </div>
+            <div class="lowerBox2">
+                <img class="peopleSVG" src="./Assets/people1.png" alt="People 1">
+                <img class="peopleSVG" src="./Assets/people2.png" alt="People 1">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Code for the second Page -->
+
+    <div class="container">
+        <div class="centerBox">
+            <div class="topBox">
+                <div class="peopleBox mainBox">
+                    <div class="peopleHeading headingBox">
+                        <i class=" peopleIcon fa-solid fa-people-group fa-xl" style="color: #8064a2;"></i>
+                        <h1 class="peopleH1 headingH1">People</h1>
+                    </div>
+                    <div class="peopleParaDiv paraDiv">
+                        <p class="peoplePara paragraph">
+                            Find a teacher, coach, or expert for your hobby interest in your locality. Find a partner,
+                            teammate, accompanist or collaborator.
+                        </p>
+                    </div>
+                    <div class="peopleBtnDiv btnDiv">
+                        <button class="peopleBtn button">Connect</button>
+                    </div>
+                </div>
+                <div class="placeBox mainBox">
+                    <div class="placeHeading headingBox">
+                        <i class="fa-solid fa-location-dot fa-xl" style="color: #77933c;"></i>
+                        <h1 class="placeH1 headingH1">Place</h1>
+                    </div>
+                    <div class="placeParaDiv paraDiv">
+                        <p class="placePara paragraph">
+                            Find a class, school, playground, auditorium, studio, shop or an event venue. Book a slot at
+                            venues that allow booking through hobbycue.
+                        </p>
+                    </div>
+                    <div class="placeBtnDiv btnDiv">
+                        <button class="placeBtn button">
+                            Meet Up
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="bottomBox">
+                <div class="productBox mainBox">
+                    <div class="productHeading headingBox">
+                        <i class="fa-solid fa-basket-shopping fa-xl" style="color: #C0504D;"></i>
+                        <h1 class="productH1 headingH1">Product</h1>
+                    </div>
+                    <div class="productParaDiv paraDiv">
+                        <p class="productPara paragraph">
+                            Find equipment or supplies required for your hobby. Buy, rent or borrow from shops, online
+                            stores or from community members.
+                        </p>
+                    </div>
+                    <div class="productBtnDiv  btnDiv">
+                        <button class="productBtn button">Get It</button>
+                    </div>
+                </div>
+                <div class="programBox mainBox">
+                    <div class="programHeading headingBox">
+                        <i class="fa-regular fa-calendar-check fa-xl" style="color: #0096C8;"></i>
+                        <h1 class="progamH1 headingH1">Program</h1>
+                    </div>
+                    <div class="programParaDiv paraDiv">
+                        <p class="programPara paragraph">
+                            Find events, meetups and workshops related to your hobby. Register or buy tickets online.
+                        </p>
+                    </div>
+                    <div class="programBtnDiv btnDiv">
+                        <button class="programBtn button">Attend</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Code for the ADD YOUR OWN -->
+
+    <div class="addYourBox">
+        <div class="addBox">
+            <div class="addHeadingDiv headingBox">
+                <i class="fa-solid fa-circle-plus" style="color: #0096C8;"></i>
+                <h1 class="addHeading headingH1">Add Your Own</h1>
+            </div>
+            <div class="addParaDiv paraDiv">
+                <p class="addPara paragraph">Are you a teacher or expert? Do you sell or rent out equipment, venue or
+                    event
+                    tickets? Or, you know someone who should be on hobbycue? Go ahead and Add your Own page</p>
+            </div>
+            <div class="addBtnDiv btnDiv">
+                <button class="addBtn button">Add new</button>
+            </div>
+        </div>
+
+
+        <div class="listingBox">
+            <div class="addHeadingDiv headingBox">
+                <i class="fa-solid fa-circle-plus" style="color: #0096C8;"></i>
+                <h1 class="addHeading headingH1">Add Your Own</h1>
+            </div>
+            <div class="topBox">
+                <div class="peopleBox mainBox">
+                    <div class="peopleHeading headingBox">
+                        <i class=" peopleIcon fa-solid fa-people-group fa-xl" style="color: #8064a2;"></i>
+                        <h1 class="peopleH1 headingH1">People</h1>
+                    </div>
+                    <div class="peopleParaDiv paraDiv">
+                        <p class="peoplePara paragraph">
+                            Find a teacher, coach, or expert for your hobby interest in your locality. Find a partner,
+                            teammate, accompanist or collaborator.
+                        </p>
+                    </div>
+                    <div class="peopleBtnDiv btnDiv">
+                        <button class="peopleBtn button">Connect</button>
+                    </div>
+                </div>
+                <div class="placeBox mainBox">
+                    <div class="placeHeading headingBox">
+                        <i class="fa-solid fa-location-dot fa-xl" style="color: #77933c;"></i>
+                        <h1 class="placeH1 headingH1">Place</h1>
+                    </div>
+                    <div class="placeParaDiv paraDiv">
+                        <p class="placePara paragraph">
+                            Find a class, school, playground, auditorium, studio, shop or an event venue. Book a slot at
+                            venues that allow booking through hobbycue.
+                        </p>
+                    </div>
+                    <div class="placeBtnDiv btnDiv">
+                        <button class="placeBtn button">
+                            Meet Up
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="bottomBox">
+                <div class="productBox mainBox">
+                    <div class="productHeading headingBox">
+                        <i class="fa-solid fa-basket-shopping fa-xl" style="color: #C0504D;"></i>
+                        <h1 class="productH1 headingH1">Product</h1>
+                    </div>
+                    <div class="productParaDiv paraDiv">
+                        <p class="productPara paragraph">
+                            Find equipment or supplies required for your hobby. Buy, rent or borrow from shops, online
+                            stores or from community members.
+                        </p>
+                    </div>
+                    <div class="productBtnDiv  btnDiv">
+                        <button class="productBtn button">Get It</button>
+                    </div>
+                </div>
+                <div class="programBox mainBox">
+                    <div class="programHeading headingBox">
+                        <i class="fa-regular fa-calendar-check fa-xl" style="color: #0096C8;"></i>
+                        <h1 class="progamH1 headingH1">Program</h1>
+                    </div>
+                    <div class="programParaDiv paraDiv">
+                        <p class="programPara paragraph">
+                            Find events, meetups and workshops related to your hobby. Register or buy tickets online.
+                        </p>
+                    </div>
+                    <div class="programBtnDiv btnDiv">
+                        <button class="programBtn button">Attend</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Code for the testimonials -->
+
+    <div class="testimonialBox">
+        <div class="innerBox">
+
+            <div class="firstBox headingBox">
+                <i class="fa-solid fa-circle-info fa-xl" style="color: #8064a2;"></i>
+                <h1 class="testimonialHeading headginH1">Testimonials</h1>
+            </div>
+            <div class="testimonialParaDiv paraDiv">
+                <p class="paragraph testimonialPara">In a fast growing and ever changing city like Bangalore, it
+                    sometimes
+                    becomes very difficult to find or connect with like minded people. Websites like hobbycue.com is a
+                    great
+                    service which helps me get in touch with, communicate, connect, and exchange ideas with other
+                    dancers.
+                    It also provides the extra benefit of finding products and services that I can avail, which I can be
+                    assured is going to be of great quality as it comes recommended by people of the hobbycue community.
+                    To
+                    have discussions, to get visibility, and to be able to safely explore various hobbies and activities
+                    in
+                    my city, all under one roof, is an excellent idea and I highly recommend it.</p>
+            </div>
+            <div class="thirdBox">
+                <div class="inputBox">
+                    <i class="fa fa-duotone fa-circle-play fa-2xl"
+                        style="--fa-primary-color: #ffffff; --fa-secondary-color: #7d3bcd;"></i>
+                    <input type="range" name="volume" id="inputRange">
+                    <img class="photo" src="./Assets/Ellipse 26.png" alt="">
+                </div>
+                <div class="display">
+                    <img src="./Assets/Ellipse 26.png" alt="" class="displayImg">
+                    <h3 class="name">Shubha Nagarajan <br> <span>Classical Dancer</span></h3>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Code for the COmmunity Page -->
+
+    <div class="communityPage">
+        <div class="hobbyDiv">
+            <h1 class="hobbyHeading headingH1"> Your <span id="purple">Hobby</span>, Your <span
+                    id="blue">Community...</span></h1>
+            <button class="getStartedBtn">
+                Get Started
+            </button>
+        </div>
+        <div class="imageDiv">
+            <div class="leftImage">
+                <img src="./Assets/pic2.png" alt="">
+            </div>
+            <div class="rightImage">
+                <img src="./Assets/pic1.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Code for the contacts page -->
+    <div class="contactPage">
+        <div class="contactsDiv">
+            <div class="hobbyCue marginClass">
+                <h3>HobbyCue</h3>
+                <ul class=contactsUl>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Work With US</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="howDoI marginClass">
+                <h3>How Do I?</h3>
+                <ul class=contactsUl>
+                    <li><a href="#">Sign UP</a></li>
+                    <li><a href="#">Add a Listing</a></li>
+                    <li><a href="#">Claim Listing</a></li>
+                    <li><a href="#">Post a query</a></li>
+                    <li><a href="#">Add a blog Post</a></li>
+                    <li><a href="#">Other queries</a></li>
+                </ul>
+            </div>
+            <div class="quickLinks marginClass">
+                <h3>Quick Links</h3>
+                <ul class=contactsUl>
+                    <li><a href="#">Listings</a></li>
+                    <li><a href="#">Blog Posts</a></li>
+                    <li><a href="#">Shop/store</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </div>
+            <div class="socials marginClass">
+                <div class="box1">
+                    <h3>Social Media</h3>
+                    <div class="icons">
+                        <i class=" fa-xl icon fa-brands fa-facebook"></i>
+                        <i class=" fa-xl icon fa-brands fa-twitter"></i>
+                        <i class=" fa-xl icon fa-brands fa-instagram"></i>
+                        <i class=" fa-xl icon fa-brands fa-google"></i>
+                        <i class=" fa-xl icon fa-brands fa-pinterest"></i>
+                        <i class=" fa-xl icon fa-brands fa-youtube"></i>
+                        <i class=" fa-xl icon fa-brands fa-telegram"></i>
+                        <i class=" fa-xl icon fa-solid fa-envelope"></i>
+                    </div>
+                </div>
+                <div class="box2">
+                    <h3>Invite Friends</h3>
+                    <div class="searchBox2">
+                        <input class="width" type="search" placeholder="Search Here">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &COPY Purple Cues Private Limited
+    </footer>
+
+</body>
+
+</html>
